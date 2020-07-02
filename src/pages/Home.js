@@ -1,16 +1,22 @@
 import React from 'react';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
-import '../styles/home.css';
-import portada from '../assets/running.jpg';
+import '../styles/styles.css';
+import portada from '../assets/zapatilla.jpg';
 
 function Home() {
   return (
-    <div >
+    <>
+    <div>
     	<Header />
-    	<img className="portada" src={portada} alt='imagen de portada'/>
-		  <Footer />    
     </div>
+    <div className='container'>
+    	{/*<img className="portada" src={portada} alt='imagen de portada'/>*/}
+    	</div>
+    	<div>
+		  <Footer />    
+		</div>
+    </>
   );
 }
 

@@ -1,0 +1,43 @@
+* {
+	margin: 0;
+	padding: 0;
+   background-color: #1f2938
+ }
+
+
+.portada {
+	width: 850px;
+	
+}
+
+.footer {
+  position: bottom;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #1f2938;
+  color: white;
+  text-align: left;
+}
+
+.header {
+  position: top;
+  background-color: #1f2938;
+  color: white;
+}
+.botonesPortada {
+  background-color: #1f2938;
+  color: #397be4;
+  float: right;
+  padding: 2vhw;
+}
+
+.container {
+    max-width: 100%;
+    
+    height: 150px;
+    background-image: url("../assets/zapatilla.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+}
