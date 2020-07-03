@@ -1,7 +1,7 @@
-/*import room1 from "./images/details-1.jpeg";
-import room2 from "./images/details-2.jpeg";
-import room3 from "./images/details-3.jpeg";
-import room4 from "./images/details-4.jpeg";
+import img1 from "./assets/nubes.jpg";
+import img2 from "./assets/panoramica.jpg";
+import img3 from "./assets/zapatilla.jpg";
+/*import room4 from "./images/details-4.jpeg";
 import img1 from "./images/room-1.jpeg";
 import img2 from "./images/room-2.jpeg";
 import img3 from "./images/room-3.jpeg";
@@ -15,98 +15,39 @@ import img10 from "./images/room-10.jpeg";
 import img11 from "./images/room-11.jpeg";
 import img12 from "./images/room-12.jpeg";*/
 
-export default [
-  {
-    carreras: {
-      id: "1"
-    },
-    datos: {
-      nombre: "Alcora",
-      lugar: "Alcora",
-      distancia: "21km",
-      desnivel: "850mts",
-      fecha: "14/07/2020",
-      url: 1,
-      description:
-        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur, dignissimos.",
-      images: [
-        {
-          fields: {
-            file: {
-              url: img1
-            }
-          }
-        }
-        ]
-      },
-  {
-   carreras: {
-      id: "2"
-    },
-    datos: {
-      nombre: "La campana Sueras",
-      lugar: "Sueras",
-      distancia: "21km",
-      desnivel: "100mts",
-      fecha: "7/7/2020" ,
-      url: 2,
-      description:
-        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur, dignissimos.",
-      images: [
-        {
-          fields: {
-            file: {
-              url: img2
-            }
-          }
-        }
-        ]
-      },
-  {
-    carreras: {
-      id: "3"
-    },
-    datos: {
-      nombre: "Monti",
-      lugar: "Onda",
-      distancia: "21km",
-      desnivel: "400mts",
-      fecha: "15/05/2020",
-      url: 3,
-      description:
-        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur, dignissimos.",
-      images: [
-        {
-          fields: {
-            file: {
-              url: img3
-            }
-          }
-        }
-        ]
-      },
-      {
+export default
+[{
+    "id": 1,
+    "nombre": "Marxa Alcora",
+    "descripcion": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit, iure?",
+    "img": img1,
+    "lugar": "Alcora",
+    "fecha": "14/5/2021",
+    "distancia": "15km",
+    "desnivel": "450",
+    "url": "",
+    "destacada": true
+},{
+    "id": 2,
+    "nombre": "Dements",
+    "descripcion": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi, nobis?",
+    "img": img2,
+    "lugar": "Eslida",
+    "fecha": "12/11/2021",
+    "distancia": "42.5km",
+    "desnivel": "#3808mts",
+    "url": "www.maratodelsdements.com",
+    "destacada": true
+},{
+    "id": 3,
+    "nombre": "Alcudia de Veo Trail",
+    "descripcion": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo, magni.",
+    "img": img3,
+    "lugar": "Alcudia de Veo",
+    "fecha": "5/5/2021",
+    "distancia": "45km",
+    "desnivel": "3450mts",
+    "url": "www.alcudiadeveotrail.com",
+    "destacada": false
+}]
 
-        carreras: {
-      id: "4"
-    },
-    datos: {
-      nombre: "Vistabella",
-      lugar: "Vistabellas",
-      distancia: "30km",
-      desnivel: "1200mts",
-      fecha: "8/8/2020",
-      url: 4,
-      description:
-        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur, dignissimos.",
-      images: [
-        {
-          fields: {
-            file: {
-              url: img4
-            }
-          }
-        }
-        ]
-      },
-]

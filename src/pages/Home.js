@@ -2,7 +2,7 @@ import React from 'react';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import '../styles/styles.css';
-import portada from '../assets/zapatilla.jpg';
+//import portada from '../assets/zapatilla.jpg';
 
 function Home() {
   return (
