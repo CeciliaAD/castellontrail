@@ -1,15 +1,36 @@
 import React from 'react';
+import {Link} from 'react-router-dom';
+import PropTypes from 'prop-types';
 
-const Carrera = ({ nombre, descripcion, img, lugar, 
-fecha, distancia, desnivel, url }) => (
+export default function Carrera({carrera}) {
+  const{nombre,lugar,img,url,descripcion,distanci,desnivel,fecha} = carrera;
+  return (
+  <article className="carrera">
+    <div className="img-container">
+      <img src={img} alt="carrera" />
+      <div className="lugar">
+        <h6>{lugar}</h6>
+      </div>
+      {/* <Link to={`/carreras/${url}`} className="btn-primary room-link">
+        Destacadas
+      </Link> */}
+      <p className="carrera-info">{nombre} {fecha}</p>
+      
+      
+    </div>
+    </article>
+  );
+}
 
-	<div className="carrera">
-	<div className="contenedor-img">
-	<img src={img} alt='carrera' />
-	<p className="info-carrera">Carrera: {nombre}</p>
-	<p>Lugar: {lugar}</p>
-	</div>
-	</div>
-)
-
-export default Carrera;
+Carrera.propTypes = {
+  carrera:PropTypes.shape({
+    nombre:PropTypes.string.isRequired,
+    img:PropTypes.string.isRequired,
+    lugar:PropTypes.string.isRequired,
+    url:PropTypes.string.isRequired,
+    descripcion:PropTypes.string.isRequired,
+    distancia:PropTypes.string.isRequired,
+    desnivel:PropTypes.string.isRequired,
+    fecha:PropTypes.string.isRequired
+  })
+}

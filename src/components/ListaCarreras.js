@@ -1,6 +1,6 @@
-import React from 'react';
+/* import React from 'react';
 import Carrera from './Carrera';
-import Carreras from './Carreras';
+//import Carreras from './Carreras';
 
 
 function ListaCarreras(props) {
@@ -14,8 +14,8 @@ function ListaCarreras(props) {
 	}
 	console.log(props);
 	return(
-		<section className="listacarreras">
-		<div className="listacarreras-centro">
+		<>
+		
 		{ props.carreras.map((carreras) => {
 			return(
 				<Carrera
@@ -32,9 +32,10 @@ function ListaCarreras(props) {
 
 				)
 		})}
-		</div>
-		</section>
+	
+		</>
 	);
 }
 
 export default ListaCarreras;
+ */

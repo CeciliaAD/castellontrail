@@ -17,37 +17,37 @@ import img12 from "./images/room-12.jpeg";*/
 
 export default
 [{
-    "id": 1,
-    "nombre": "Marxa Alcora",
-    "descripcion": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit, iure?",
-    "img": img1,
-    "lugar": "Alcora",
-    "fecha": "14/5/2021",
-    "distancia": "15km",
-    "desnivel": "450",
-    "url": "",
-    "destacada": true
+    id: 1,
+    nombre: "Marxa Alcora",
+    descripcion: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit, iure?",
+    img: img1,
+    lugar: "Alcora",
+    fecha: "14/5/2021",
+    distancia: "15km",
+    desnivel: "450",
+    url: "",
+    destacada: true
 },{
-    "id": 2,
-    "nombre": "Dements",
-    "descripcion": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi, nobis?",
-    "img": img2,
-    "lugar": "Eslida",
-    "fecha": "12/11/2021",
-    "distancia": "42.5km",
-    "desnivel": "#3808mts",
-    "url": "www.maratodelsdements.com",
-    "destacada": true
+    id: 2,
+    nombre: "Dements",
+    descripcion: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi, nobis?",
+    img: img2,
+    lugar: "Eslida",
+    fecha: "12/11/2021",
+    distancia: "42.5km",
+    desnivel: "#3808mts",
+    url: "www.maratodelsdements.com",
+    destacada: false
 },{
-    "id": 3,
-    "nombre": "Alcudia de Veo Trail",
-    "descripcion": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo, magni.",
-    "img": img3,
-    "lugar": "Alcudia de Veo",
-    "fecha": "5/5/2021",
-    "distancia": "45km",
-    "desnivel": "3450mts",
-    "url": "www.alcudiadeveotrail.com",
-    "destacada": false
+    id: 3,
+    nombre: "Alcudia de Veo Trail",
+    descripcion: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo, magni.",
+    img: img3,
+    lugar: "Alcudia de Veo",
+    fecha: "5/5/2021",
+    distancia: "45km",
+    desnivel: "3450mts",
+    url: "www.alcudiadeveotrail.com",
+    destacada: false
 }]
 

@@ -1,7 +1,7 @@
-import React from 'react';
+/* import React from 'react';
 import Data from '../data.js';
 import ListaCarreras from './ListaCarreras'
-import Carrera from './Carrera'
+//import Carrera from './Carrera'
 
 class Carreras extends React.Component {
 	constructor(props) {
@@ -22,4 +22,4 @@ class Carreras extends React.Component {
 	}
 }
 
-export default Carreras;
+export default Carreras;  */
