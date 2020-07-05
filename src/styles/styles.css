@@ -1,6 +1,7 @@
 * {
 	margin: 0;
-	padding: 0;
+  padding: 0;
+  box-sizing: border-box;
    /* background-color: #1f2938 */
  }
 /* 
@@ -52,7 +53,7 @@
 }
 .section-title h4 {
   font-size: 2rem;
-  letter-spacing: var(--mainSpacing);
+  letter-spacing: 3px;
   text-transform: capitalize;
   margin-bottom: 1rem;
 }
@@ -60,58 +61,19 @@
   width: 5rem;
   height: 5px;
   margin: 0 auto;
-  background: var(--primaryColor);
-}
-.carrera {
-  box-shadow: 2px 5px 3px 0px rgba(0, 0, 0, 0.5);
-  transition: all 0.3s linear;;
-}
-.carrera:hover {
-  box-shadow: 4px 10px 5px 0px rgba(0, 0, 0, 0.5);
+  background: #af9a7d;
 }
 
-.carrera-info {
-  background: #cfcfcf;
-  text-transform: capitalize;
-  padding: 0.5rem 0;
-  text-align: center;
-  font-weight: 700;
-  letter-spacing: 3px;
-}
-.img-container {
-  position: relative;
-}
-.img-container img {
-  width: 100%;
-  display: block;
-  transition: all 0.3s linear;
-}
-
-.img-container:hover {
-  background: rgba(0, 0, 0, 0.8);
-}
-.img-container:hover img {
-  opacity: 0.3;
-}
-.img-container:hover .price-top {
-  opacity: 0;
-}
-.img-container:hover .room-link {
-  transform: translate(-50%, -50%) scale(1);
-}
-
-.carreras-destacadas {
+/* .carreras-destacadas {
   padding: 5rem 0;
+  
 }
-.carreras-destacadas-center {
-  width: 80vw;
-  margin: 0 auto;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
-  grid-row-gap: 2rem;
-  grid-column-gap: 40px;
-}
-@media screen and (min-width: 776px) {
+.carreras-destacadas-center > div{
+  display: flex;
+  width: 350px;
+  
+} */
+/* @media screen and (min-width: 776px) {
   .carreras-destacadas-center {
     width: 90vw;
     grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
@@ -122,8 +84,24 @@
     width: 95vw;
     max-width: 1170px;
   }
+} */
+.carrera {
+  box-shadow: 2px 5px 3px 0px rgba(0, 0, 0, 0.5);
+  transition: all 0.3s linear;
+  width: 350px;
+}
+.carrera:hover {
+  box-shadow: 4px 10px 5px 0px rgba(0, 0, 0, 0.5);
 }
 
+.img-container {
+  position: relative;
+}
+.img-container img {
+  width: 100%;
+  display: block;
+  transition: all 0.3s linear;
+}
 .lugar {
   position: absolute;
   top: 0;
@@ -142,6 +120,34 @@
   font-weight: 300;
   letter-spacing: 3px;
 }
+.carrera-link {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: scale(0);
+  transition: all 0.3s linear;
+}
+.img-container:hover {
+  background: rgba(0, 0, 0, 0.8);
+}
+.img-container:hover img {
+  opacity: 0.3;
+}
+.img-container:hover .price-top {
+  opacity: 0;
+}
+.img-container:hover .room-link {
+  transform: translate(-50%, -50%) scale(1);
+}
+.carrera-info {
+  background: #cfcfcf;
+  text-transform: capitalize;
+  padding: 0.5rem 0;
+  text-align: center;
+  font-weight: 700;
+  letter-spacing: 3px;
+}
+
 .search {
   height: 60px;
 }

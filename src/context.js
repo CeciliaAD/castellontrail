@@ -12,9 +12,8 @@ class CarrerasProvider extends Component {
     
     componentDidMount(){
         let carreras = datos;
-        console.log(carreras)
-        let carrerasDestacadas = carreras.filter(carreras => carreras.destacada === true);
-        console.log(carrerasDestacadas);
+        let carrerasDestacadas = carreras.filter(carrera => carrera.destacada === true);
+        console.log(this.state.carrerasDestacadas);
         this.setState({
             carreras,
             carrerasDestacadas,
