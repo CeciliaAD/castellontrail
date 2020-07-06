@@ -64,16 +64,15 @@
   background: #af9a7d;
 }
 
-/* .carreras-destacadas {
-  padding: 5rem 0;
-  
-}
-.carreras-destacadas-center > div{
-  display: flex;
+.carreras-destacadas {
   width: 350px;
+}
+/*
+.carreras-destacadas-center > div{
+  width: 70px;
   
-} */
-/* @media screen and (min-width: 776px) {
+} 
+@media screen and (min-width: 776px) {
   .carreras-destacadas-center {
     width: 90vw;
     grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));

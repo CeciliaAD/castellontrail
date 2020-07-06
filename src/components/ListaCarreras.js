@@ -1,5 +1,48 @@
-/* import React from 'react';
-import Carrera from './Carrera';
+import React, { useContext } from 'react';
+import { CarrerasContext } from '../contexts/CarrerasContext';
+
+const ListaCarreras = () => {
+	const { carreras } = useContext(CarrerasContext);
+return (
+	<div>
+	<ul>
+	{carreras.map(carrera => {
+		return(
+			<li className="carrera" key={carrera.id}>{carrera.nombre}</li> 
+		)
+	})}
+	</ul>
+</div>
+);
+}
+export default ListaCarreras;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*import Carrera from './Carrera';
 //import Carreras from './Carreras';
 
 
