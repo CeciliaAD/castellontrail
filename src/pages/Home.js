@@ -1,21 +1,21 @@
 import React from 'react';
-import Header from '../components/Header';
-import Footer from '../components/Footer';
-//import portada from '../assets/zapatilla.jpg';
+import Portada from '../components/Portada';
 import CarrerasContextProvider from '../contexts/CarrerasContext';
 import ListaCarreras from '../components/ListaCarreras';
+import Buscador from '../components/Buscador';
 import CarrerasDestacadas from '../components/CarrerasDestacadas';
+import '../App.css';
 
 
 function Home() {
   return (
     <>
-     	<Header />
-      <CarrerasContextProvider>
+       <Portada/>
+       <CarrerasContextProvider>
+        <Buscador />
         <CarrerasDestacadas/>
         <ListaCarreras />
       </CarrerasContextProvider>
-      <Footer />    
     </>
   );
 }

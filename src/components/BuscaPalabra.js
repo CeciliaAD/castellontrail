@@ -1,11 +1,11 @@
-import React, { useState } from 'react'
+/* import React, { useState } from 'react'
 
-const Search = ({ getQuery }) => {
+const Search = ({}) => {
   const [text, setText] = useState('')
 
   const onChange = (q) => {
     setText(q)
-    getQuery(q)
+    
   }
 
   return (
@@ -17,11 +17,11 @@ const Search = ({ getQuery }) => {
           placeholder='Search characters'
           value={text}
           onChange={(e) => onChange(e.target.value)}
-          autoFocus
+          
         />
       </form>
     </section>
   )
 }
 
-export default Search
+export default Search */

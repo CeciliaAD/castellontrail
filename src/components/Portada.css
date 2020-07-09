@@ -1,0 +1,21 @@
+h1 {
+  font-size: 3.5rem;
+}
+
+.hero-image{
+    background: linear-gradient(rgba(0, 0, 0, 1.5), rgba(0, 0, 0, 0.5)), url("../assets/zapatilla.jpg");
+    height: 350px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    text-decoration: none;
+   }
+.hero-text {
+    text-decoration: none;
+}
+
+.botonesPortada {
+  float: right;
+  margin: 1%;
+}

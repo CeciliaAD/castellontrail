@@ -1,14 +1,21 @@
 import React, { createContext, useState} from 'react';
 import img1 from "../assets/nubes.jpg";
-import img2 from "../assets/panoramica.jpg";
-import img3 from "../assets/zapatilla.jpg";
-import img4 from "../assets/fontsEslida.jpg";
+import img2 from "../assets/20.jpg";
+import img3 from "../assets/23.jpg";
+import img4 from "../assets/19.jpg";
 import img5 from "../assets/utes.jpg";
 import img6 from "../assets/xodos.jpg";
-
+import img7 from "../assets/14.jpg";
+import img8 from "../assets/15.jpg";
+import img9 from "../assets/16.jpg";
+import img10 from "../assets/17.jpg";
+import img11 from "../assets/18.jpg";
+import img12 from "../assets/19.jpg";
+import img13 from "../assets/21.jpg";
 export const CarrerasContext = createContext();
 
 const CarrerasContextProvider = (props) => {
+    
     const [carreras, setCarreras] = useState([
 
     {
@@ -80,7 +87,90 @@ const CarrerasContextProvider = (props) => {
         desnivel: "2367mts",
         url: "www.maratoxodospenyagolosa.es",
         destacada: false
+    },
+    {
+        id: 7,
+        nombre: "Volta a la Campana",
+        descripcion: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit, iure?",
+        img: img7,
+        lugar: "Sueras",
+        fecha: "Octubre/2021",
+        distancia: "23km",
+        desnivel: "1300mts",
+        url: "https://voltaalacampana.com",
+        destacada: false
+    },{
+        id: 8,
+        nombre: "Volta Sprint",
+        descripcion: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi, nobis?",
+        img: img8,
+        lugar: "Morella",
+        fecha: "Mayo/2021",
+        distancia: "11km",
+        desnivel: "#500mts",
+        url: "https://voltaalacampana.com",
+        destacada: false
+    },{
+        id: 9,
+        nombre: "Trail Denes de Morella",
+        descripcion: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo, magni.",
+        img: img9,
+        lugar: "Morella",
+        fecha: "Mayo/2021",
+        distancia: "45km",
+        desnivel: "1900mts",
+        url: "https://voltaalacampana.com",
+        destacada: false
+    },
+    {
+        id: 10,
+        nombre: "Refugis de Pedra",
+        descripcion: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit, iure?",
+        img: img10,
+        lugar: "Onda",
+        fecha: "Marzo/2021",
+        distancia: "46km",
+        desnivel: "2450km",
+        destacada: false,
+        url: "https://refugisdepedra.es"
+        
+    },{
+        id: 11,
+        nombre: "Refugis Sprint",
+        descripcion: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi, nobis?",
+        img: img11,
+        lugar: "Onda",
+        fecha: "Marzo/2021",
+        distancia: "15km",
+        desnivel: "950",
+        destacada: false,
+        url: "https://refugisdepedra.es"
+        
+    },{
+        id: 12,
+        nombre: "Cursa Muntanya Cati",
+        descripcion: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo, magni.",
+        img: img12,
+        lugar: "Cati",
+        fecha: "Junio/2021",
+        distancia: "20,5km",
+        desnivel: "1100mts",
+        url: "https://www.facebook.com/cursadecati",
+        destacada: false
     }
+    ,{
+        id: 13,
+        nombre: "Marxa Muntanya Cati",
+        descripcion: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo, magni.",
+        img: img13,
+        lugar: "Cati",
+        fecha: "Junio/2021",
+        distancia: "12km",
+        desnivel: "550mts",
+        url: "https://www.facebook.com/cursadecati",
+        destacada: false
+    }
+
     
 ])
 return(

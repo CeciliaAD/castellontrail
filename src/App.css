@@ -2,54 +2,20 @@
 	margin: 0;
   padding: 0;
   box-sizing: border-box;
-   /* background-color: #1f2938 */
  }
- /* 
- .portada {
-   min-height: calc(100vh - 66px);
-   background: url('./assets/zapatilla.jpg') center/cover no-repeat;
-   display: flex;
-   align-items: center;
-   justify-content: center;
- } */
+
+ #root {
+   background-color: #1F2938;
+   margin-left: 0;
+   
+}
  
  
- .footer {
-   position: fixed;
-   justify-content: space-between;
-   left: 0;
-   bottom: 0;
-   width: 100%;
-   background-color: #1f2938;
-   color: white;
-   text-align: left;
- }
- 
- .header {
-   position: top;
-   /* background-color: #1f2938; */
-   color: white;
- }
- .botonesPortada {
-   background-color: #1f2938;
-   color: #397be4;
-   float: right;
-   padding: 2vhw;
- }
- 
-  /* .container {
-     
-     height: 150px; 
-     background-image: url("../assets/zapatilla.jpg");
-     background-size: cover;
-     background-repeat: no-repeat;
-     background-position: 50% 50%;
- }
-  */
- 
+
   .section-title {
    text-align: center;
    margin-bottom: 4rem;
+   color: white;
  }
  .section-title h4 {
    font-size: 2rem;
@@ -62,37 +28,6 @@
    height: 5px;
    margin: 0 auto;
    background: #af9a7d;
- }
- 
- .carreras-destacadas {
-   padding: 5rem 0;
- }
- .carreras-destacadas-center {
-   width: 80vw;
-   margin: 0 auto;
-   display: grid;
-   grid-template-columns: repeat(auto-fit, minmax(70px, 70px));
-   grid-row-gap: 2rem;
-   grid-column-gap: 40px;
- }
- @media screen and (min-width: 776px) {
-   .carreras-destacadas-center {
-     width: 90vw;
-     grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
-   }
- }
- @media screen and (min-width: 992px) {
-   .carreras-destacadas-center {
-     width: 95vw;
-     max-width: 1170px;
-   }
- }
- .carrera {
-   box-shadow: 2px 5px 3px 0px rgba(0, 0, 0, 0.5);
-   transition: all 0.3s linear;
- }
- .carrera:hover {
-   box-shadow: 4px 10px 5px 0px rgba(0, 0, 0, 0.5);
  }
  
  .img-container {
@@ -140,26 +75,4 @@
  .img-container:hover .room-link {
    transform: translate(-50%, -50%) scale(1);
  }
- .carrera-info {
-   background: #cfcfcf;
-   text-transform: capitalize;
-   padding: 0.5rem 0;
-   text-align: center;
-   font-weight: 700;
-   letter-spacing: 3px;
- }
- 
- .search {
-   height: 60px;
- }
- 
- input[type='text'] {
-   display: block;
-   padding: 10px;
-   font-size: 20px;
-   border: 0;
-   border-radius: 5px;
-   width: 30%;
-   margin: auto;
- }
-  
+

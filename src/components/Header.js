@@ -1,18 +1,27 @@
 import React from 'react';
-
+import Button from 'react-bootstrap/Button';
+import './Header.css'
+import { Link } from 'react-router-dom';
 
 function Header() {
   return (
-  	<>
-    	<div className="header">
-    	<a href="/">CASTELLÓN TRAIL</a>
-    	<button className="botonesPortada" type='button'>Iniciar Sesión</button>
-	   	<button className="botonesPortada" type='button'>Registrarse</button>
-	   
-	   <p className="header">Estás viendo la versión Beta</p>  
-	   </div>
-  	</>
-      );
+	
+	<nav>
+    	<ul className="header">
+		<Link to="/">
+		<li className="castellonTrail">Castellón Trail</li>
+		</Link>
+		<Link to="/iniciar">
+		<li className="botonesPortada"variant="secondary">Iniciar Sesión</li>
+		</Link>
+		<Link to="/registrarse">
+		<li className="botonesPortada"variant="secondary">Registrarse</li>
+		</Link>		
+	    <li className="header">Estás viendo la versión Beta</li> 
+		</ul> 
+ 	</nav>
+	
+    );
 }
 
 export default Header;

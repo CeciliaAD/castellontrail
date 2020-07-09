@@ -1,18 +1,24 @@
 import React from 'react';
-
+import './Footer.css';
+import { Link } from 'react-router-dom';
 
 function Footer() {
   return (
-    <div className="footer">
-      <a href="/" >CASTELLÓN TRAIL</a>
-      <p>Benicàssim, España</p>
-      <div>
-      <a href="/" >Acerca de nosotros</a>
-      <a href="/" >Contactar</a>
-      </div>
-      <p>Desarrollado por CeciliaAD <a href="https://github.com/CeciliaAD">https://github.com/CeciliaAD</a></p>
-    </div>
+    <nav>
+      <ul className="footer">
+        <Link to="/">
+        <li>CASTELLÓN TRAIL</li>
+        </Link>
+        <li>Benicàssim, España</li>
+        <Link to="/acerca">
+        <li>Acerca de nosotros</li>
+        </Link>
+        <Link to="/contactar">
+        <li>Contactar</li>
+        </Link>
+        <li>Desarrollado por CeciliaAD <a href="https://github.com/CeciliaAD">https://github.com/CeciliaAD</a></li>
+      </ul>
+    </nav>
   );
 }
-
 export default Footer;

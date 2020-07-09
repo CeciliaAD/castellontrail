@@ -1,20 +1,30 @@
 import React, { useContext } from 'react';
 import { CarrerasContext } from '../contexts/CarrerasContext';
+import Carrera from './Carrera';
+import CardDeck from 'react-bootstrap/CardDeck';
+import './ListaCarreras.css';
 
 const ListaCarreras = () => {
-	const { carreras } = useContext(CarrerasContext);
-return (
-	<div>
-	<ul>
-	{carreras.map(carrera => {
-		return(
-			<li className="carrera" key={carrera.id}>{carrera.nombre}</li> 
-		)
-	})}
-	</ul>
-</div>
+    const { carreras } = useContext(CarrerasContext);
+    
+    return (
+            <>
+            <h4 className="section-title">Resultados:</h4>
+				<CardDeck className="cardDeck">
+            
+            
+                {carreras.map(carrera => {
+                return (<Carrera className="item" style={{backgroundImage: "url({img}"}} key={carrera.id} carrera={carrera}/>
+                        
+                
+                )
+        })} 
+                </CardDeck>
+                </>
 );
 }
+
+
 export default ListaCarreras;
 
 
