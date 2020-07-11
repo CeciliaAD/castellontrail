@@ -1,23 +1,29 @@
-import React from 'react';
+import React, { Component } from 'react';
 import Portada from '../components/Portada';
-import CarrerasContextProvider from '../contexts/CarrerasContext';
-import ListaCarreras from '../components/ListaCarreras';
+import ListaCarreras from '../components/carreras/ListaCarreras';
 import Buscador from '../components/Buscador';
-import CarrerasDestacadas from '../components/CarrerasDestacadas';
+import CarrerasDestacadas from '../components/carreras/CarrerasDestacadas';
 import '../App.css';
+import { connect } from 'react-redux';
 
-
-function Home() {
+class Home extends Component {
+  render() {
+    //console.log(this.props)   
+    const { carreras } = this.props;
   return (
     <>
        <Portada/>
-       <CarrerasContextProvider>
-        <Buscador />
-        <CarrerasDestacadas/>
-        <ListaCarreras />
-      </CarrerasContextProvider>
+       <Buscador />
+       <CarrerasDestacadas carreras={carreras}/>
+       <ListaCarreras carreras={carreras} />
+      
     </>
   );
 }
-
-export default Home;
+}
+const mapStateToProps = (state) => {
+  return {
+    carreras: state.carreras.carreras
+  }
+}
+export default connect(mapStateToProps)(Home);

@@ -1,0 +1,15 @@
+.title {
+    color: blue;
+}
+
+.card-deck {
+   padding: 10rem;
+}
+
+p {
+    color: #2757B3;
+}
+
+p:hover{
+    color: blue;
+    }

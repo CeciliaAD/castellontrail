@@ -1,4 +1,4 @@
-import React, { createContext, useState} from 'react';
+/* import React, { createContext, useState} from 'react';
 import img1 from "../assets/nubes.jpg";
 import img2 from "../assets/20.jpg";
 import img3 from "../assets/23.jpg";
@@ -234,4 +234,4 @@ class CarrerasProvider extends Component {
 const CarrerasConsumer = CarrerasContext.Consumer;
 
 export { CarrerasProvider, CarrerasConsumer, CarrerasContext };
- */
+ */ 

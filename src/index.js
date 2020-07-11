@@ -6,6 +6,8 @@ import 'bootstrap/dist/css/bootstrap.css';
 import { createStore } from 'redux';
 import rootReducer from './store/reducers/rootReducer';
 import { Provider } from 'react-redux';
+import Home from './pages/Home';
+import MenuCrudCarreras from './components/admin/MenuCrudCarreras';
 
 const store = createStore(rootReducer);
 
