@@ -4,10 +4,10 @@ import CardDeck from 'react-bootstrap/CardDeck';
 import './Carrera.css';
 
 export default function Carrera({carrera}) {
-  const{nombre,lugar,img,url,descripcion,distancia,desnivel,fecha} = carrera;
+  const{nombre,lugar,img, distancia, fecha} = carrera;
   return (
-    <CardDeck>
-  <Card style={{boxSizing: "inherit", backgroundColor: "#303743", color: "white", margin: "2rem", width: "350px"}}>
+  
+  <Card style={{boxSizing: "inherit", backgroundColor: "#303743", color: "white", margin: "2rem", marginLeft: "6rem",width: "350px", display: "inline-block"}}>
     <Card.Body>
       <Card.Img variant="top" src={img} style={{height: "13rem", width: "100%"}} alt="carrera" />
       <div className="lugar">
@@ -23,7 +23,7 @@ export default function Carrera({carrera}) {
       </Card.Title>
       </Card.Body>
   </Card>
-  </CardDeck>
+  
   );
 }
 

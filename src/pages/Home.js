@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
 import Portada from '../components/Portada';
-import ListaCarreras from '../components/carreras/ListaCarreras';
-import Buscador from '../components/Buscador';
 import CarrerasDestacadas from '../components/carreras/CarrerasDestacadas';
 import '../App.css';
 import { connect } from 'react-redux';
+import BuscadorCarreras from '../components/carreras/BuscadorCarreras';
+
 
 class Home extends Component {
   render() {
@@ -13,9 +13,8 @@ class Home extends Component {
   return (
     <>
        <Portada/>
-       <Buscador />
        <CarrerasDestacadas carreras={carreras}/>
-       <ListaCarreras carreras={carreras} />
+       <BuscadorCarreras carreras={carreras}/>
       
     </>
   );

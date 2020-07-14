@@ -14,6 +14,7 @@ import img13 from "../../assets/21.jpg";
 
 
 const initState = {
+    
     carreras: [
         {
             id: 1,

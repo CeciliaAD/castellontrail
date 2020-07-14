@@ -1,37 +1,68 @@
-import React from 'react';
-//import { CarrerasContext } from '../contexts/CarrerasContext';
+import React, { useState } from 'react';
 import Carrera from './Carrera';
 import CardDeck from 'react-bootstrap/CardDeck';
 import './ListaCarreras.css';
 
 const ListaCarreras = ({carreras}) => {
       
-    return (
-            <>
-            <h4 className="section-title">Resultados:</h4>
-				<CardDeck className="cardDeck">
-            
-            
-                {carreras.map(carrera => {
-                return (
-					<Carrera className="item" style={{backgroundImage: "url({img}"}} key={carrera.id} carrera={carrera}/>
-                     
-                
-                )
-        })} 
-                </CardDeck>
-                </>
-);
-}
+	const [value, setValue] = useState('')
+  
+	return (
+		<>
+	  	<div className="buscador">
+		  <h4>Buscar Carrera:</h4>
+		<input 
+		  type="text"
+		  value={value} 
+		  onChange={e => setValue(e.target.value)} 
+		/>
+		</div>
+		<h4 className="section-title">Resultados:</h4>
+		<CardDeck className="cardDeck">
+	
+		{carreras
+		  .filter(carrera => {
+			if (!value) return true
+			if (carrera.nombre.includes(value) || carrera.lugar.includes(value)) {
+			  return true
+			}
+		  })
+		  .map(carrera => {
+			  return(
+			<Carrera
+			  carrera={carrera} key={carrera.id}
+			/>
+		  )
+		})}
+	</CardDeck>
+	</>
+	)
+  }
 
 
 export default ListaCarreras;
 
 
 
-
-
-
+/* 
+  return (
+	<>
+	<h4 className="section-title">Resultados:</h4>
+		<CardDeck className="cardDeck">
+	
+	
+		{carreras.map(carrera => {
+		return (
+			<Carrera className="item" style={{backgroundImage: "url({img}"}} key={carrera.id} carrera={carrera}/>
+			 
+		
+		)
+})} 
+		</CardDeck>
+		</>
+);
+}
+ */
 
 
 

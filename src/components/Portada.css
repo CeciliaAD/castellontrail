@@ -1,5 +1,8 @@
-h1 {
+.tituloPortada {
   font-size: 3.5rem;
+  text-align: left;
+  padding-top: 273px;
+  opacity: 0.3;
 }
 
 .hero-image{

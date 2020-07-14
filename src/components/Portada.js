@@ -4,7 +4,7 @@ import './Portada.css';
 function Portada() {
     return (
     <div className="hero-image">
-    <a href="/"><h1>Castellón Trail</h1></a>
+    <h1 className="tituloPortada">Castellón Trail</h1>
       <div></div>
     </div>)
 
