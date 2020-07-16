@@ -4,6 +4,7 @@ import CarrerasDestacadas from '../components/carreras/CarrerasDestacadas';
 import '../App.css';
 import { connect } from 'react-redux';
 import BuscadorCarreras from '../components/carreras/BuscadorCarreras';
+import Mapa from '../components/mapa/MapaCarreras';
 
 
 class Home extends Component {
@@ -15,6 +16,7 @@ class Home extends Component {
        <Portada/>
        <CarrerasDestacadas carreras={carreras}/>
        <BuscadorCarreras carreras={carreras}/>
+       <Mapa/>
       
     </>
   );

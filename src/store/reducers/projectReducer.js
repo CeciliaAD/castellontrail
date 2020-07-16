@@ -22,8 +22,8 @@ const initState = {
             descripcion: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit, iure?",
             img: img1,
             lugar: "Alcora",
-            fecha: "14/5/2021",
-            distancia: "15km",
+            fecha: "14-5-2021",
+            distancia: "15",
             desnivel: "450",
             url: "",
             destacada: true
@@ -33,8 +33,8 @@ const initState = {
             descripcion: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi, nobis?",
             img: img2,
             lugar: "Eslida",
-            fecha: "12/11/2021",
-            distancia: "42.5km",
+            fecha: "2021-11-12",
+            distancia: "42.5",
             desnivel: "#3808mts",
             url: "www.maratodelsdements.com",
             destacada: false
@@ -44,8 +44,8 @@ const initState = {
             descripcion: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo, magni.",
             img: img3,
             lugar: "Alcudia de Veo",
-            fecha: "5/5/2021",
-            distancia: "45km",
+            fecha: "2021-5-5",
+            distancia: "45",
             desnivel: "3450mts",
             url: "www.alcudiadeveotrail.com",
             destacada: false
@@ -57,7 +57,7 @@ const initState = {
             img: img4,
             lugar: "Eslida",
             fecha: "Agosto",
-            distancia: "15,2km",
+            distancia: "15.2",
             desnivel: "530",
             destacada: true,
             url: "www.facebook.com/fonts.deslida"
@@ -69,7 +69,7 @@ const initState = {
             img: img5,
             lugar: "La Vall D'Uixo",
             fecha: "Febrero",
-            distancia: "84km",
+            distancia: "84",
             desnivel: "5500mts",
             destacada: true,
             url: "www.espadantrailevents.com"
@@ -81,7 +81,7 @@ const initState = {
             img: img6,
             lugar: "Xodos",
             fecha: "Junio",
-            distancia: "42km",
+            distancia: "42",
             desnivel: "2367mts",
             url: "www.maratoxodospenyagolosa.es",
             destacada: false
@@ -93,7 +93,7 @@ const initState = {
             img: img7,
             lugar: "Sueras",
             fecha: "Octubre/2021",
-            distancia: "23km",
+            distancia: "23",
             desnivel: "1300mts",
             url: "https://voltaalacampana.com",
             destacada: false
@@ -104,7 +104,7 @@ const initState = {
             img: img8,
             lugar: "Morella",
             fecha: "Mayo/2021",
-            distancia: "11km",
+            distancia: "11",
             desnivel: "#500mts",
             url: "https://voltaalacampana.com",
             destacada: false
@@ -115,7 +115,7 @@ const initState = {
             img: img9,
             lugar: "Morella",
             fecha: "Mayo/2021",
-            distancia: "45km",
+            distancia: "45",
             desnivel: "1900mts",
             url: "https://voltaalacampana.com",
             destacada: false
@@ -127,7 +127,7 @@ const initState = {
             img: img10,
             lugar: "Onda",
             fecha: "Marzo/2021",
-            distancia: "46km",
+            distancia: "46",
             desnivel: "2450km",
             destacada: false,
             url: "https://refugisdepedra.es"
@@ -139,7 +139,7 @@ const initState = {
             img: img11,
             lugar: "Onda",
             fecha: "Marzo/2021",
-            distancia: "15km",
+            distancia: "15",
             desnivel: "950",
             destacada: false,
             url: "https://refugisdepedra.es"
@@ -151,7 +151,7 @@ const initState = {
             img: img12,
             lugar: "Cati",
             fecha: "Junio/2021",
-            distancia: "20,5km",
+            distancia: "20.5",
             desnivel: "1100mts",
             url: "https://www.facebook.com/cursadecati",
             destacada: false
@@ -163,7 +163,7 @@ const initState = {
             img: img13,
             lugar: "Cati",
             fecha: "Junio/2021",
-            distancia: "12km",
+            distancia: "12",
             desnivel: "550mts",
             url: "https://www.facebook.com/cursadecati",
             destacada: false

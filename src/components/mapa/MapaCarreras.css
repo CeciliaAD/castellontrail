@@ -1,0 +1,16 @@
+.leaflet-container {
+    margin-top: 10rem;
+    width: 70rem;
+    height: 70vh;
+    margin: 0 auto;
+  }
+
+  h4 {
+      color: white;
+      text-align: center;
+  }
+
+  .mapa {
+      margin-top: 10rem;
+      margin-bottom: 4rem;
+  }

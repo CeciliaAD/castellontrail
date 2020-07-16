@@ -8,6 +8,7 @@ import rootReducer from './store/reducers/rootReducer';
 import { Provider } from 'react-redux';
 import Home from './pages/Home';
 import MenuCrudCarreras from './components/admin/MenuCrudCarreras';
+import "leaflet/dist/leaflet.css";
 
 const store = createStore(rootReducer);
 

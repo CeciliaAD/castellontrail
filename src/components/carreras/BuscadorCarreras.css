@@ -12,7 +12,7 @@ h4, label {
    padding: 5rem 0;
  }
  .form_filtro {
-   width: 40vw;
+   width: 68vw;
    margin: 0 auto;
    display: grid;
    grid-template-columns: repeat(auto-fit, minmax(202px, 1fr));

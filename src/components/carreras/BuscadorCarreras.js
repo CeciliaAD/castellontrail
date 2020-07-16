@@ -1,74 +1,77 @@
 import React, { useState } from 'react';
 import Carrera from './Carrera';
-import CardDeck from 'react-bootstrap/CardDeck';
 import './BuscadorCarreras.css';
-import { Label } from 'semantic-ui-react';
+
 
 const BuscadorCarreras = ({carreras}) => {
-    const [value, setValue] = useState('')
-    
-    return (
+  
+  const [state, setState] = useState({
+	texto: "",
+	distancia: "",
+	fecha: ""
+  })
+
+  function handleChange(e) {
+	const value = e.target.value;
+	setState({
+	  ...state,
+	  [e.target.name]: value
+	});
+  }
+  return (
+	
 		<section>
 		<div className="contenedor_buscador">
 		<h4>Buscar Carrera</h4>
-        <h4 className="section-title">Resultados:</h4>
+        
         <form className="form_filtro">
+		<div>
         <label htmlFor="texto">Búsqueda por texto</label>
         <input 
 		  type="text"
-          value={value} 
-          name="texto"
-		  onChange={e => setValue(e.target.value)} 
+		  name="texto"
+		  value={state.texto}
+		  onChange={handleChange}
 		/>
-		<label htmlFor="distancia">Búsqueda por distancia Km:</label>
-		<input 
-		  type="range"
-          value={value} min="10" max="42,5" step="1"
-          name="distancia"
-		  onChange={e => setValue(e.target.value)} 
-		/>
+		</div>
+		<div>
+		<label htmlFor="distancia">Búsqueda por distancia {state.distancia} Km </label>
+		<input
+            type="range"
+            name="distancia"
+            min="0"
+            max="85"
+			id="distancia"
+			value={state.distancia}
+			
+            onChange={handleChange}
+            className="form-control"
+          />
+		  </div>
+		  <div>
+		<label htmlFor="fecha">Búsqueda por fecha:</label>
+		<input type="date" id="fecha" name="date"
+		value={state.date}
+		onChange={handleChange}
+       	min="2020-01-01" max="2022-12-31"/>
+		   </div>
         </form>
 		</div>
+		<h4 className="section-title">Resultados:</h4>
         <div>
+		
 		{carreras
-		  .filter(carrera => {
-			if (!value) return true
-			if (carrera.nombre.includes(value) || carrera.lugar.includes(value)) {
-			  return true
-			}
-		  })
-		  .map(carrera => {
-			  return(
-            
-			<Carrera
-			  carrera={carrera} key={carrera.id}
-			/>
-
-		  )
-		})}
+		  .filter(carrera => carrera.nombre.includes(state.texto) || carrera.lugar.includes(state.texto) || carrera.distancia.includes(state.distancia) || carrera.fecha.includes(state.date))  
+		  .map(carrera => <Carrera carrera={carrera} key={carrera.id}/>)
+		}
 	    
         
-        {carreras
-		  .filter(carrera => {
-            if (!value) return false
-			if (carrera.distancia.includes(value) || carrera.distancia.includes(value)) {
-			  return true
-			}
-        })
-		  .map(carrera => {
-			  return(
-            
-			<Carrera
-			  carrera={carrera} key={carrera.id}
-			/>
-            
-		  )
-		})}
         </div>
-		</section>    
 
+		</section>    
   )
 }
+
 
 export default BuscadorCarreras;
 

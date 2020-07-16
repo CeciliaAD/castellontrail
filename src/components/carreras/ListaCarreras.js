@@ -19,21 +19,10 @@ const ListaCarreras = ({carreras}) => {
 		</div>
 		<h4 className="section-title">Resultados:</h4>
 		<CardDeck className="cardDeck">
-	
 		{carreras
-		  .filter(carrera => {
-			if (!value) return true
-			if (carrera.nombre.includes(value) || carrera.lugar.includes(value)) {
-			  return true
-			}
-		  })
-		  .map(carrera => {
-			  return(
-			<Carrera
-			  carrera={carrera} key={carrera.id}
-			/>
-		  )
-		})}
+		  .filter(carrera => carrera.nombre.includes(value) || carrera.lugar.includes(value))
+		  .map(carrera => <Carrera carrera={carrera} key={carrera.id}/>)
+		}
 	</CardDeck>
 	</>
 	)
